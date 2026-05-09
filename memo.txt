@@ -1,0 +1,25 @@
+Terminal command 
+angular project set up
+sudo npm install -g @angular/cli
+
+create new angular project
+ng new projectname --no-strict --standalone false --routing false
+
+Questions before creating project
+1.Which stylesheet format would you like to use it?
+--CSS
+2.Do you want to enable Server-Side Rendering(SSR) and Static Site Generation (SSG/Prerendering)?(y/n)
+--no
+
+then, navigate into newly cereated project folder
+cd foldername
+
+install bootstrap
+npm install --save bootstrap@3
+angular.json styles[]array
+node_modules/bootstrap/dist/css/bootstrap.min.css
+
+generate component
+ng generate component foldername1/foldername2 --skip-tests
+ng g c foldername1/foldername2 --skip-tests
+"--skip-tests": in the tutorial videos, the tutor uses the "--spec false" command, however, it doesn't work because Angular CLI is new version.
