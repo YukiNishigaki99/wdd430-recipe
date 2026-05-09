@@ -1,8 +1,8 @@
 # WDD430 Recipe
 
-This project was developed for the WDD430 Web Full-Stack Development course at BYU-Idaho.
-Built by following the [LEGACY](https://academind.com/) Angular - The Complete Guide course by Academind.
-This project is currently a work in progress as I follow the course.
+This project was developed for the WDD430 Web Full-Stack Development course at BYU-Idaho.  
+Built by following the [LEGACY](https://academind.com/) Angular - The Complete Guide course by Academind.  
+This project is currently a work in progress as I follow the course.  
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.10.
 
 ## Development server
