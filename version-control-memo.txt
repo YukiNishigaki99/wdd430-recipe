@@ -1,9 +1,72 @@
-どのrepositoryにつながっているか確認する方法
-git remote -v
+======================================================================
+[Git Cheat Sheet] How to Create a New Branch and Push to GitHub
+======================================================================
 
-新しいブランチを作ってそこに保存する方法
+----------------------------------------------------------------------
+1. Check Your Repository Connection
+----------------------------------------------------------------------
+Before doing anything, make sure your local folder is connected to 
+the correct GitHub repository.
+
+Command:
+  git remote -v
+
+What it does:
+  Displays the URL of the remote repository your project is linked to.
+
+
+----------------------------------------------------------------------
+2. The Step-by-Step Workflow (Creating a Branch & Pushing Changes)
+----------------------------------------------------------------------
+Follow these 4 steps in order to safely save your current edits to 
+a new branch and upload it to GitHub.
+
+[Step 1] Create and switch to a new branch
+  Command:
+    git checkout -b branchname
+  
+  What it does:
+    Creates a new branch named "branchname" and switches to it immediately.
+    Your current edits will safely move with you to this new branch.
+    (*Note: The "-b" flag stands for "new branch".)
+
+[Step 2] Stage your changes
+  Command:
+    git add .
+  
+  What it does:
+    Prepares all your modified and new files, getting them ready to 
+    be saved. The dot "." means "add everything in this folder."
+
+[Step 3] Commit your changes locally
+  Command:
+    git commit -m "Messages comes here."
+  
+  What it does:
+    Saves your staged changes to your local computer with a message.
+
+[Step 4] Push to GitHub
+  Command:
+    git push -u origin week3
+  
+  What it does:
+    Uploads your new "week3" branch and your commits to GitHub.
+    (*Note: The "-u" flag links your local branch to GitHub, so 
+     next time you can just type "git push".)
+
+
+----------------------------------------------------------------------
+3. Quick Copy-Paste Template for Next Time
+----------------------------------------------------------------------
+# 1. Create & switch branch
 git checkout -b branchname
--bは新しくブランチを作るという意味。
 
-変更を保存してgithubにプッシュする
+# 2. Stage changes
+git add .
+
+# 3. Commit locally
+git commit -m "Your commit message"
+
+# 4. Push to GitHub
 git push -u origin branchname
+======================================================================
