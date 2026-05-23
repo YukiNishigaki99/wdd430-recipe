@@ -8,4 +8,9 @@ import { Component, signal } from '@angular/core';
 })
 export class AppComponent {
   protected readonly title = signal('wdd430-recipe');
+  loadedFeature = 'recipe';
+
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
 }

@@ -4,6 +4,8 @@ sudo npm install -g @angular/cli
 
 create new angular project
 ng new projectname --no-strict --standalone false --routing false
+ng new cms --prefix cms
+ng new cms --prefix cms --no-strict --standalone false --routing false
 
 Questions before creating project
 1.Which stylesheet format would you like to use it?

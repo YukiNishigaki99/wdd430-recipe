@@ -1,0 +1,9 @@
+どのrepositoryにつながっているか確認する方法
+git remote -v
+
+新しいブランチを作ってそこに保存する方法
+git checkout -b branchname
+-bは新しくブランチを作るという意味。
+
+変更を保存してgithubにプッシュする
+git push -u origin branchname
